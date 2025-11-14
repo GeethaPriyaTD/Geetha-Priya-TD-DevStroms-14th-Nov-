@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Addition Form - Deep Blue Theme</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3291/3291695.png">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #031027, #00152d, #001a38);
+            margin: 0;
+            padding: 0;
+            color: #dce7ff;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            background: rgba(0, 20, 45, 0.95);
+            border: 1px solid #123c6b;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0px 0px 25px rgba(0, 85, 160, 0.35);
+        }
+
+        h2 {
+            text-align: center;
+            color: #66c2ff;
+            margin-bottom: 25px;
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            background: #041122;
+            border-left: 5px solid #66c2ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 10px rgba(0, 60, 120, 0.3);
+        }
+
+        .section h3 {
+            color: #87d1ff;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+
+        .field {
+            flex: 1;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 6px;
+            color: #e1ecff;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #1e3b55;
+            background: #02172f;
+            color: #d6e7ff;
+            font-size: 15px;
+            box-shadow: inset 0 0 8px rgba(0, 60, 120, 0.3);
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            border-color: #66c2ff;
+            outline: none;
+            box-shadow: 0 0 10px rgba(102, 194, 255, 0.6);
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        button {
+            background: #66c2ff;
+            border: none;
+            padding: 12px 35px;
+            font-size: 18px;
+            color: #001a33;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 0 12px rgba(102, 194, 255, 0.6);
+        }
+
+        button:hover {
+            background: #8bd5ff;
+            box-shadow: 0 0 18px rgba(139, 213, 255, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Project Addition Form</h2>
+
+    <form>
+
+        <!-- Project Details -->
+        <div class="section">
+            <h3>1. Project Details</h3>
+
+            <div class="row">
+                <div class="field">
+                    <label>Project Title</label>
+                    <input type="text" placeholder="Enter project title">
+                </div>
+
+                <div class="field">
+                    <label>Project Category</label>
+                    <select>
+                        <option>Select Category</option>
+                        <option>Web Development</option>
+                        <option>AI / ML</option>
+                        <option>Mobile App</option>
+                        <option>Database Project</option>
+                    </select>
+                </div>
+            </div>
+
+            <label>Project Description</label>
+            <textarea placeholder="Enter project description"></textarea>
+        </div>
+
+        <!-- Team Details -->
+        <div class="section">
+            <h3>2. Team Details</h3>
+
+            <div class="row">
+                <div class="field">
+                    <label>Team Leader Name</label>
+                    <input type="text" placeholder="Enter leader name">
+                </div>
+
+                <div class="field">
+                    <label>Team Members</label>
+                    <input type="text" placeholder="Enter team members">
+                </div>
+            </div>
+        </div>
+
+        <!-- Guide Details -->
+        <div class="section">
+            <h3>3. Guide / Mentor Details</h3>
+
+            <div class="row">
+                <div class="field">
+                    <label>Guide Name</label>
+                    <input type="text" placeholder="Enter guide name">
+                </div>
+
+                <div class="field">
+                    <label>Department</label>
+                    <input type="text" placeholder="Enter department">
+                </div>
+            </div>
+        </div>
+
+        <!-- Technology Stack -->
+        <div class="section">
+            <h3>4. Technology Stack</h3>
+
+            <div class="row">
+                <div class="field">
+                    <label>Frontend Technologies</label>
+                    <input type="text" placeholder="HTML, CSS, JS...">
+                </div>
+
+                <div class="field">
+                    <label>Backend Technologies</label>
+                    <input type="text" placeholder="Python, Node.js...">
+                </div>
+            </div>
+
+            <label>Database Used</label>
+            <input type="text" placeholder="MySQL, MongoDB...">
+        </div>
+
+        <!-- File Upload -->
+        <div class="section">
+            <h3>5. Upload Files</h3>
+
+            <div class="row">
+                <div class="field">
+                    <label>Project Report (PDF)</label>
+                    <input type="file" accept=".pdf">
+                </div>
+
+                <div class="field">
+                    <label>Presentation (PPT)</label>
+                    <input type="file" accept=".ppt,.pptx">
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit -->
+        <div class="btn-container">
+            <button type="submit">Submit Project</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
